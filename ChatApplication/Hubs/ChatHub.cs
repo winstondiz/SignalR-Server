@@ -14,9 +14,9 @@ namespace ChatApplication.Hubs
 			return Clients.Group(room);
 		}
 		
-        public void SendMessage(string name, string message, string roomName)
+        public void SendMessage(string name, string message, string fullDate, string roomName)
         {
-            Clients.Group(roomName).GetMessage(name, message);
+            Clients.Group(roomName).GetMessage(name, message, fullDate);
         }
 
         public Task JoinRoom(string roomName)
