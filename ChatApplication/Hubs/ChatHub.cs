@@ -31,7 +31,7 @@ namespace ChatApplication.Hubs
 		{
 			get
 			{
-				return this.personName.Equals(App.UserName);
+				return false;
 			}
 		}
 
