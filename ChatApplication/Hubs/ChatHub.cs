@@ -48,7 +48,7 @@ namespace ChatApplication.Hubs
 
     public class ChatHub : Hub
     {
-		public static List<KeyValuePair<string, ChatModel>> messanges;
+		public static List<KeyValuePair<string, ChatModel>> messanges = new List<KeyValuePair<string, ChatModel>>();
 
 		public object GetHistory(string room)
 		{
