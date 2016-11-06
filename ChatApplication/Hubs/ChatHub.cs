@@ -9,6 +9,11 @@ namespace ChatApplication.Hubs
 {
     public class ChatHub : Hub
     {
+		public object GetHistory(string room)
+		{
+			return Clients.Group(room);
+		}
+		
         public void SendMessage(string name, string message, string roomName)
         {
             Clients.Group(roomName).GetMessage(name, message);
