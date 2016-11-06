@@ -69,7 +69,7 @@ namespace ChatApplication.Hubs
 		}
 
 
-		public IEnumerable<string> GetUsers(string room)
+		public IEnumerable<string> GetUsers()
 		{
 			if ((registredUsers == null) || (registredUsers.Count == 0))
 				return default(IEnumerable<string>);
